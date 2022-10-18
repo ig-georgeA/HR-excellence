@@ -1,9 +1,35 @@
-<div class="column-layout demo-content">
-  <img src="/assets/start-building.svg" class="image" />
-  <h6 class="h6">
-    Start building!
-  </h6>
-  <p class="igx-typography__body-2 text">
-    Remove the "demo-content" container, and add your own content.
-  </p>
-</div>
+<igx-tabs [disableAnimation]="true" class="tabs">
+  <igx-tab-item [selected]="true" [disabled]="false" class="tab-item">
+    <igx-tab-content class="fake_tab_content">
+      <igx-grid [data]="northwindEmployees" primaryKey="employeeID" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
+        <igx-column header="employeeID" field="employeeID" dataType="number" [sortable]="true" title="employeeID"></igx-column>
+        <igx-column header="lastName" field="lastName" dataType="string" [sortable]="true" title="lastName"></igx-column>
+        <igx-column header="firstName" field="firstName" dataType="string" [sortable]="true" title="firstName"></igx-column>
+        <igx-column header="title" field="title" dataType="string" [sortable]="true" title="title"></igx-column>
+        <igx-column header="titleOfCourtesy" field="titleOfCourtesy" dataType="string" [sortable]="true" title="titleOfCourtesy"></igx-column>
+        <igx-column header="birthDate" field="birthDate" dataType="date" [sortable]="true" title="birthDate"></igx-column>
+        <igx-column header="hireDate" field="hireDate" dataType="date" [sortable]="true" title="hireDate"></igx-column>
+        <igx-column header="street" field="address.street" dataType="string" [sortable]="true" title="address.street"></igx-column>
+        <igx-column header="city" field="address.city" dataType="string" [sortable]="true" title="address.city"></igx-column>
+        <igx-column header="region" field="address.region" dataType="string" [sortable]="true" title="address.region"></igx-column>
+        <igx-column header="postalCode" field="address.postalCode" dataType="string" [sortable]="true" title="address.postalCode"></igx-column>
+        <igx-column header="country" field="address.country" dataType="string" [sortable]="true" title="address.country"></igx-column>
+        <igx-column header="phone" field="address.phone" dataType="string" [sortable]="true" title="address.phone"></igx-column>
+        <igx-column header="managerID" field="managerID" dataType="number" [sortable]="true" title="managerID"></igx-column>
+        <igx-column header="notes" field="notes" dataType="string" [sortable]="true" title="notes"></igx-column>
+        <igx-column header="avatarUrl" field="avatarUrl" dataType="string" [sortable]="true" title="avatarUrl"></igx-column>
+      </igx-grid>
+    </igx-tab-content>
+    <igx-tab-header>
+      <span igxTabHeaderLabel>Label</span>
+      <igx-icon igxTabHeaderIcon>info</igx-icon>
+    </igx-tab-header>
+  </igx-tab-item>
+  <igx-tab-item class="tab-item">
+    <igx-tab-content class="fake_tab_content"></igx-tab-content>
+    <igx-tab-header>
+      <span igxTabHeaderLabel>Label</span>
+      <igx-icon igxTabHeaderIcon>info</igx-icon>
+    </igx-tab-header>
+  </igx-tab-item>
+</igx-tabs>
