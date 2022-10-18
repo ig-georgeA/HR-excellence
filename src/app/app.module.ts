@@ -4,12 +4,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { IgxCardModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxGridModule, IgxTabsModule, IgxListModule, IgxAvatarModule, IgxToggleModule, IgxDialogModule, IgxCheckboxModule, IgxSwitchModule } from '@infragistics/igniteui-angular';
+import { IgxCardModule, IgxButtonModule, IgxRippleModule, IgxIconModule, IgxGridModule, IgxListModule, IgxAvatarModule, IgxToggleModule, IgxDialogModule, IgxCheckboxModule, IgxSwitchModule } from '@infragistics/igniteui-angular';
 import { IgxCategoryChartModule } from 'igniteui-angular-charts';
 import { FormsModule } from '@angular/forms';
 import { TeamComponent } from './team/team.component';
 import { EventsComponent } from './events/events.component';
-import { IgxTabsModule } from 'igniteui-angular';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -31,7 +30,6 @@ import { HttpClientModule } from '@angular/common/http';
     IgxGridModule,
     IgxCategoryChartModule,
     FormsModule,
-    IgxTabsModule,
     IgxListModule,
     IgxAvatarModule,
     IgxToggleModule,
